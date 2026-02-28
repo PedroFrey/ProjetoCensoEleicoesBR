@@ -1,0 +1,13 @@
+{
+  "name": "ProjetoCensoEleicoesBR - dbt",
+  "image": "mcr.microsoft.com/devcontainers/python:3.11",
+  "postCreateCommand": "pip install --upgrade pip && pip install dbt-duckdb",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "innoverio.vscode-dbt-power-user",
+        "ms-python.python"
+      ]
+    }
+  }
+}

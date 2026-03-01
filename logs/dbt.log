@@ -1,0 +1,109 @@
+[0m18:39:19.819958 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70f4493bbb90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70f44641e3d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70f44670dad0>]}
+
+
+============================== 18:39:19.832968 | 8fd31f11-6320-40e5-83b9-3afd6786e865 ==============================
+[0m18:39:19.832968 [info ] [MainThread]: Running with dbt=1.11.6
+[0m18:39:19.834098 [debug] [MainThread]: running dbt with arguments {'debug': 'False', 'introspect': 'True', 'profiles_dir': '/home/vscode/.dbt', 'log_format': 'default', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_cache_events': 'False', 'cache_selected_only': 'False', 'log_path': 'logs', 'no_print': 'None', 'target_path': 'None', 'printer_width': '80', 'warn_error': 'None', 'send_anonymous_usage_stats': 'True', 'use_experimental_parser': 'False', 'fail_fast': 'False', 'indirect_selection': 'eager', 'write_json': 'True', 'quiet': 'False', 'version_check': 'True', 'static_parser': 'True', 'use_colors': 'True', 'empty': 'None', 'invocation_command': 'dbt init projeto_censo_eleicoes_br', 'partial_parse': 'True'}
+[0m18:39:19.847977 [info ] [MainThread]: Creating dbt configuration folder at /home/vscode/.dbt
+[0m18:39:19.849837 [debug] [MainThread]: Starter project path: /workspaces/ProjetoCensoEleicoesBR/venv/lib/python3.11/site-packages/dbt/include/starter_project
+[0m18:39:19.855191 [info ] [MainThread]: 
+Your new dbt project "projeto_censo_eleicoes_br" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m18:39:19.857731 [info ] [MainThread]: Setting up your profile.
+[0m18:46:32.905318 [info ] [MainThread]: Profile projeto_censo_eleicoes_br written to /home/vscode/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m18:46:32.907593 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 433.14468, "process_in_blocks": "160", "process_kernel_time": 0.266203, "process_mem_max_rss": "109952", "process_out_blocks": "80", "process_user_time": 1.410803}
+[0m18:46:32.908297 [debug] [MainThread]: Command `dbt init` succeeded at 18:46:32.908169 after 433.15 seconds
+[0m18:46:32.908819 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70f44ad6ae10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70f44ad6ac50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70f44ad6acd0>]}
+[0m18:46:32.909401 [debug] [MainThread]: Flushing usage events
+[0m18:46:33.026630 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:47:01.771497 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f549ea20150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f549bb26650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f549bb26b10>]}
+
+
+============================== 18:47:01.781039 | ff1e3668-4a43-470f-baac-57aa5510cbe3 ==============================
+[0m18:47:01.781039 [info ] [MainThread]: Running with dbt=1.11.6
+[0m18:47:01.782267 [debug] [MainThread]: running dbt with arguments {'use_colors': 'True', 'introspect': 'True', 'invocation_command': 'dbt debug', 'empty': 'None', 'profiles_dir': '/home/vscode/.dbt', 'printer_width': '80', 'log_path': 'logs', 'indirect_selection': 'eager', 'warn_error': 'None', 'version_check': 'True', 'write_json': 'True', 'send_anonymous_usage_stats': 'True', 'fail_fast': 'False', 'debug': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'target_path': 'None', 'cache_selected_only': 'False', 'quiet': 'False', 'partial_parse': 'True', 'log_cache_events': 'False', 'log_format': 'default', 'use_experimental_parser': 'False'}
+[0m18:47:01.801747 [info ] [MainThread]: dbt version: 1.11.6
+[0m18:47:01.802501 [info ] [MainThread]: python version: 3.11.14
+[0m18:47:01.803195 [info ] [MainThread]: python path: /workspaces/ProjetoCensoEleicoesBR/venv/bin/python
+[0m18:47:01.803917 [info ] [MainThread]: os info: Linux-6.8.0-1044-azure-x86_64-with-glibc2.41
+[0m18:47:01.855694 [info ] [MainThread]: Using profiles dir at /home/vscode/.dbt
+[0m18:47:01.856192 [info ] [MainThread]: Using profiles.yml file at /home/vscode/.dbt/profiles.yml
+[0m18:47:01.856652 [info ] [MainThread]: Using dbt_project.yml file at /workspaces/ProjetoCensoEleicoesBR/dbt_project.yml
+[0m18:47:01.857224 [info ] [MainThread]: adapter type: postgres
+[0m18:47:01.857742 [info ] [MainThread]: adapter version: 1.10.0
+[0m18:47:01.858178 [info ] [MainThread]: Configuration:
+[0m18:47:01.858609 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m18:47:01.859247 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m18:47:01.860036 [info ] [MainThread]: Required dependencies:
+[0m18:47:01.861038 [debug] [MainThread]: Executing "git --help"
+[0m18:47:01.866199 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m18:47:01.866661 [debug] [MainThread]: STDERR: "b''"
+[0m18:47:01.867017 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m18:47:01.867438 [info ] [MainThread]: Connection:
+[0m18:47:01.867903 [info ] [MainThread]:   host: ep-nameless-recipe-ae75jc8n-pooler.c-2.us-east-2.aws.neon.tech
+[0m18:47:01.868301 [info ] [MainThread]:   port: 5432
+[0m18:47:01.868738 [info ] [MainThread]:   user: neondb_owner
+[0m18:47:01.869143 [info ] [MainThread]:   database: neondb
+[0m18:47:01.869583 [info ] [MainThread]:   schema: public
+[0m18:47:01.869987 [info ] [MainThread]:   connect_timeout: 10
+[0m18:47:01.870388 [info ] [MainThread]:   role: None
+[0m18:47:01.870817 [info ] [MainThread]:   search_path: None
+[0m18:47:01.871220 [info ] [MainThread]:   keepalives_idle: 0
+[0m18:47:01.871677 [info ] [MainThread]:   sslmode: None
+[0m18:47:01.872105 [info ] [MainThread]:   sslcert: None
+[0m18:47:01.872552 [info ] [MainThread]:   sslkey: None
+[0m18:47:01.873003 [info ] [MainThread]:   sslrootcert: None
+[0m18:47:01.873661 [info ] [MainThread]:   application_name: dbt
+[0m18:47:01.874222 [info ] [MainThread]:   retries: 1
+[0m18:47:01.875105 [info ] [MainThread]: Registered adapter: postgres=1.10.0
+[0m18:47:02.038226 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m18:47:02.073088 [debug] [MainThread]: Using postgres connection "debug"
+[0m18:47:02.073545 [debug] [MainThread]: On debug: select 1 as id
+[0m18:47:02.073928 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:47:02.338900 [debug] [MainThread]: Postgres adapter: Got a retryable error when attempting to open a postgres connection.
+1 attempts remaining. Retrying in 0 seconds.
+Error:
+connection to server at "ep-nameless-recipe-ae75jc8n-pooler.c-2.us-east-2.aws.neon.tech" (3.132.12.55), port 5432 failed: ERROR:  password authentication failed for user 'neondb_owner'
+connection to server at "ep-nameless-recipe-ae75jc8n-pooler.c-2.us-east-2.aws.neon.tech" (3.132.12.55), port 5432 failed: ERROR:  connection is insecure (try using `sslmode=require`)
+
+[0m18:47:02.485174 [debug] [MainThread]: Postgres adapter: Error running SQL: select 1 as id
+[0m18:47:02.485773 [debug] [MainThread]: Postgres adapter: Rolling back transaction.
+[0m18:47:02.486227 [debug] [MainThread]: On debug: No close available on handle
+[0m18:47:02.486658 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m18:47:02.487182 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m18:47:02.487610 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </workspaces/ProjetoCensoEleicoesBR/dbt_project.yml> not found
+
+[0m18:47:02.488083 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  connection to server at "ep-nameless-recipe-ae75jc8n-pooler.c-2.us-east-2.aws.neon.tech" (3.147.243.31), port 5432 failed: ERROR:  password authentication failed for user 'neondb_owner'
+  connection to server at "ep-nameless-recipe-ae75jc8n-pooler.c-2.us-east-2.aws.neon.tech" (3.147.243.31), port 5432 failed: ERROR:  connection is insecure (try using `sslmode=require`)
+  
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m18:47:02.489197 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.7692623, "process_in_blocks": "104", "process_kernel_time": 0.357151, "process_mem_max_rss": "119388", "process_out_blocks": "24", "process_user_time": 1.499043}
+[0m18:47:02.489747 [debug] [MainThread]: Command `dbt debug` failed at 18:47:02.489632 after 0.77 seconds
+[0m18:47:02.490130 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m18:47:02.490580 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f549b14dc50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f549b9b39d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f54a03d6d10>]}
+[0m18:47:02.491076 [debug] [MainThread]: Flushing usage events
+[0m18:47:02.544945 [debug] [MainThread]: An error was encountered while trying to flush usage events

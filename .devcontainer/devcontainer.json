@@ -4,6 +4,8 @@
 
   "postCreateCommand": "pip install --upgrade pip && pip install -r requirements.txt",
 
+  "postStartCommand": "echo \"$GCP_SERVICE_ACCOUNT\" > /tmp/gcp_key.json",
+
   "remoteEnv": {
     "DBT_PROFILES_DIR": "${containerWorkspaceFolder}"
   },

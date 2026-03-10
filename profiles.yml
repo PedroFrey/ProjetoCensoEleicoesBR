@@ -1,0 +1,14 @@
+projeto_censo_eleicoes:
+  outputs:
+    dev:
+      type: bigquery
+      method: service-account-json
+      project: genericproject2023
+      dataset: censo_eleicoes_br
+      location: US
+      threads: 5
+      priority: interactive
+      job_execution_timeout_seconds: 300
+      job_retries: 1
+      keyfile_json: "{{ env_var('GCP_SERVICE_ACCOUNT') }}"
+  target: dev

@@ -104,6 +104,7 @@ Environment variable used:
 
 ```
 GCP_SERVICE_ACCOUNT
+via echo $GCP_SERVICE_ACCOUNT > /tmp/gcp_key.json
 ```
 
 This avoids storing credentials in the repository.

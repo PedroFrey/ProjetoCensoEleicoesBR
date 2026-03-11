@@ -1,0 +1,16 @@
+version: 2
+
+sources:
+  - name: tse
+    database: basedosdados
+    schema: br_tse_eleicoes
+
+    tables:
+      - name: perfil_eleitorado_secao
+        description: Perfil do eleitorado por seção eleitoral, o meu chamado "Demografia por seção"
+      - name: detalhes_votacao_secao
+        description: O meu chamado "Presença por sessão"
+      - name: resultados_candidato_secao
+        description: O meu chamado "Votos dos Candidatos"( esse preciso confirmar, o nome está diferente de votacao_secao_2022_PE)
+      - name: local_secao
+        description: geografia_secao

@@ -6,12 +6,12 @@
 with bronze as (
 
     select *
-    from {{ ref('raw_perfil_eleitorado') }}
+    from {{ ref('raw_detalhes_votacao_secao') }}
 
 ),
 
 -- =====================================================
--- COLUMN STANDARDIZATION names and Types
+-- COLUMN STANDARDIZATION names and Types and columns selection
 -- =====================================================
 renamed as (
 

@@ -1,4 +1,4 @@
-{{ config(materialized = 'view') }}
+{{ config(materialized = 'table') }}
 
 -- =====================================================
 -- SILVER LAYER
@@ -13,7 +13,7 @@
 with bronze as (
 
     select *
-    from {{ ref('perfil_eleitorado') }}
+    from {{ ref('raw_perfil_eleitorado') }}
 
 ),
 
@@ -23,20 +23,44 @@ with bronze as (
 renamed as (
 
     select
-        cast(ano as int64)          as ano,
+        cast(ano as int64)              as ano,
         sigla_uf,
-        id_municipio,
-        id_municipio_tse,
+        cast(id_municipio as int64)     as id_municipio,
+        cast(id_municipio_tse as int64) as id_municipio_tse,
         zona,
         secao,
-        genero,
-        estado_civil,
-        grupo_idade,
-        instrucao,
-        cast(eleitores as int64)    as eleitores
+        cast(genero as int64)           as id_genero,
+        cast(estado_civil as int64)     as id_estado_civil,
+        cast(grupo_idade as int64)      as id_grupo_idade,
+        cast(instrucao as int64)        as id_instrucao,
+        cast(eleitores as int64)        as eleitores
 
     from bronze
 
+),
+-- =====================================================
+-- COLUMN MAPPING
+-- =====================================================
+mapeamento as (
+    select
+        renamed.*
+        {{ get_mapped_columns(column_mapping={
+            'id_genero': 'genero',
+            'id_estado_civil': 'estado_civil',
+            'id_grupo_idade': 'grupo_idade',
+            'id_instrucao': 'instrucao'
+        }) }}
+    from renamed
+    {{ get_mapped_joins(
+        table_id='perfil_eleitorado_secao',
+        column_mapping={
+            'id_genero': 'genero',
+            'id_estado_civil': 'estado_civil',
+            'id_grupo_idade': 'grupo_idade',
+            'id_instrucao': 'instrucao'
+        },
+        base_alias='renamed'
+    ) }}
 ),
 
 -- =====================================================
@@ -74,7 +98,7 @@ transformed as (
             'S', cast(secao as string)
         ) as loc_key
 
-    from renamed
+    from mapeamento
 
 )
 

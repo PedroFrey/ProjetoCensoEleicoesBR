@@ -13,4 +13,8 @@ sources:
       - name: resultados_candidato_secao
         description: O meu chamado "Votos dos Candidatos"( esse preciso confirmar, o nome está diferente de votacao_secao_2022_PE)
       - name: local_secao
-        description: geografia_secao
+        description: Fonte para ter Latitude e Longitude das seções eleitorais
+      - name: perfil_eleitorado_local_votacao
+        description: Fonte alternativa para ter Latitude e Longitude das seções eleitorais
+      - name: dicionario
+        description: Dicionario para o ID das dimensões
